@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Converso de Moedas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/moedaOnline"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editQuantidadeMoeda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="   Digite o Valor"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editContacaoMoeda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="   Informe o valor da moeda"
+        android:inputType="number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:text="     Resultado"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="converter"
+        android:text="Converter"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/qualMoeda"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text="Qual Moeda"
+        android:textAlignment="center" />
+
+</LinearLayout>
